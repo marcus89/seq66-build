@@ -1,24 +1,22 @@
 Format: 1.0
-Source: sooperlooper
-Binary: sooperlooper
+Source: seq66
+Binary: seq66
 Architecture: any
-Version: 4.0.1
+Version: 0.98.10
 Maintainer: José Bollo <jose.bollo@iot.bzh>
 Standards-Version: 3.8.2
 Homepage: https://github.com/redpesk-addons/afb-supervisor
 Build-Depends:
-  libtool-bin, 
-  debhelper-compat (= 10), 
-  libasound2-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], 
+  autoconf,
+  libtool-bin,
+  g++,
   libjack-jackd2-dev,
-  liblo-dev, 
-  libncurses5-dev, 
-  librubberband-dev, 
-  libsamplerate-dev, 
-  libsigc++-2.0-dev (>= 2.2.10), 
-  libsndfile1-dev, 
-  libwxgtk3.0-gtk3-dev, 
-  libxml2-dev
+  liblo-dev,
+  libasound2-dev,
+  qt5-qmake,
+  qtbase5-dev,
+  make, 
+  debhelper-compat (= 10)
 Files:
- sooperlooper-v1.7.8.tar.gz
+ seq66-0.98.10.tar.gz
 DEBTRANSFORM-RELEASE: 1
